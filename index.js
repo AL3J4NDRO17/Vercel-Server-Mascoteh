@@ -29,7 +29,8 @@ const Pool = mysql.createPool({
    database: 'clima',
    waitForConnections: true,
    connectionLimit: 10,
-   queueLimit: 0
+   queueLimit: 0,
+   connectTimeout: 30000  
 });   
 console.log("object");   
 Pool.getConnection((err, connection) => {
