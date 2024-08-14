@@ -35,7 +35,7 @@ console.log("object");
 Pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to MySQL:', err.code);
-    if (err.code === 'ETIMEDOUT') {
+    if (err.code === 'TIMEOUT') {
       console.error('Connection timeout. Please check network connectivity and MySQL server status.');
     } else {
       console.error('Other error:', err);
