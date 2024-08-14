@@ -10,13 +10,13 @@ const mysql = require('mysql2');
 //     queueLimit: 0
 //   });
 const Pool = mysql.createPool({
-    host: '172.31.98.25', 
-    user: 'chucho',
-    password: 'chucho',
-    database: 'bd_preciounico',
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
+host: 'localhost', // O usa '191.101.13.154'
+   user: 'root',
+   password: '',
+   database: 'clima',
+   waitForConnections: true,
+   connectionLimit: 10,
+   queueLimit: 0
   });  
   const getProductos = (req, res) => {
     Pool.query('SELECT * FROM tblproductos', (error, results) => {
