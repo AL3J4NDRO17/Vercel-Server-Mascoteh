@@ -30,7 +30,7 @@ const Pool = mysql.createPool({
    waitForConnections: true,
    connectionLimit: 10,
    queueLimit: 0,
-   connectTimeout: 30000  
+   connectTimeout: 30000
 });   
 console.log("object");   
 Pool.getConnection((err, connection) => {
