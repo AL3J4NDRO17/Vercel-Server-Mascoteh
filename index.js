@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 // });
 
 const Pool = mysql.createPool({
-   host: 'localhost', // O usa '191.101.13.154'
+   host: '192.168.1.69', // O usa '191.101.13.154'
    user: 'root',
    password: '',
    database: 'clima',
